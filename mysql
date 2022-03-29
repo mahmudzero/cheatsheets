@@ -1,0 +1,1 @@
+mysql client is just `mysql`, first thing to try is `mysql -u root -p` which'll prompt for password

@@ -1,0 +1,1 @@
+[git]grep "foo" | fzf | vim -q /dev/stdin

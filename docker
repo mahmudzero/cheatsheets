@@ -1,2 +1,6 @@
 1.
   can call `docker-compose exec foo bash` for a container named `foo`, which will give us a shell
+
+2.
+  when mysql is hosted on docker, find out the name of the network nad then you can talk to it like so
+  DATABASE_URL=<name>://user@ip/database_name

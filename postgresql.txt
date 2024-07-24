@@ -1,0 +1,14 @@
+If you need to have postgresql@16 first in your PATH, run:
+  echo 'export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find postgresql@16 you may need to set:
+  export LDFLAGS="-L/opt/homebrew/opt/postgresql@16/lib"
+  export CPPFLAGS="-I/opt/homebrew/opt/postgresql@16/include"
+
+For pkg-config to find postgresql@16 you may need to set:
+  export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@16/lib/pkgconfig"
+
+To start postgresql@16 now and restart at login:
+  brew services start postgresql@16
+Or, if you don't want/need a background service you can just run:
+  LC_ALL="C" /opt/homebrew/opt/postgresql@16/bin/postgres -D /opt/homebrew/var/postgresql@16
